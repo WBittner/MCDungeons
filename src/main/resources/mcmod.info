@@ -4,7 +4,7 @@
   "name": "Minecraft Dungeons",
   "description": "Proceedurally generated dungeons.",
   "version": "1",
-  "mcversion": "1.7.10",
+  "mcversion": "1.11",
   "url": "https://github.com/WBittner/MCDungeons",
   "updateUrl": "",
   "authorList": ["William Bittner", "Nicholas Denaro"],
