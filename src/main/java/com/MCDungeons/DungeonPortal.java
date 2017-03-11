@@ -1,6 +1,7 @@
 package com.MCDungeons;
 
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.block.Block;
@@ -14,9 +15,6 @@ public class DungeonPortal {
 	
 	@SubscribeEvent
 	public void onBlockPlace(PlaceEvent event) {
-		if(event.getPlacedBlock().getBlock().equals(Block.getBlockFromName("tripwire"))) {
-			System.out.println("tripwire??");
-		}
 	}
 	
 	@SubscribeEvent
@@ -25,6 +23,6 @@ public class DungeonPortal {
 
 		EntityPlayerMP p=(EntityPlayerMP)event.getPlayer();
         FMLCommonHandler.instance().getMinecraftServerInstance().getPlayerList().transferPlayerToDimension(p, 33,
-                new DungeonTeleporter(p.getServer().worldServerForDimension(33), p.getPosition()));
+                new DungeonTeleporter(p.getServer().worldServerForDimension(33)));
 	}
 }

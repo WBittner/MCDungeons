@@ -7,7 +7,7 @@ import net.minecraft.world.WorldServer;
 
 public class DungeonTeleporter extends Teleporter {
 
-    public DungeonTeleporter(WorldServer worldIn, BlockPos pos) {
+    public DungeonTeleporter(WorldServer worldIn) {
         super(worldIn);
     }
 }
